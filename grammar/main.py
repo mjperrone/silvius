@@ -1,12 +1,10 @@
 # Main file. Parse new commands from stdin until EOF.
 
-from scan import find_keywords
-from scan import scan
-from parse import parse
-from parse import GrammaticalError
-from parse import SingleInputParser
-from execute import execute
 from ast import printAST
+
+from execute_mac import execute
+from parse import GrammaticalError, SingleInputParser, parse
+from scan import find_keywords, scan
 
 if __name__ == '__main__':
     import sys
